@@ -1,0 +1,132 @@
+#my{
+    width: 15%;
+    margin: auto;
+    color: #1E516C;
+}
+
+#homemy {
+    width: 12%;
+    margin: auto;
+    color: #1E516C;   
+}
+
+#login {
+    display: flex;
+    width: 50%;
+    gap: 70%;
+    margin: auto;
+}
+
+#mainbox{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 530px;
+    width: 90%;
+    gap: 25px;
+    margin: auto;
+}
+
+#mainbox > div {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+#mainbox > div > h4 {
+   margin-left: 25px;
+}
+
+#glog {
+    display: flex;
+    margin-top: -10px;
+}
+ #googlelog{
+   background-color: #4F71E8;
+   color: white;
+   width: 140px;
+   cursor: pointer;
+ }
+
+ #userdata{
+    margin-top: 75px;
+ }
+
+ #username{
+    width: 90%;
+    height: 40px;
+ }
+
+ 
+ #password{
+    width: 90%;
+    height: 40px;
+ }
+ 
+ #check {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    
+ }
+
+ #check > p{
+    margin-top: -2px;
+ }
+
+ #loginbtn {
+    height: 60px;
+    width: 120px;
+    margin-left: 38%;
+    background-color: orange;
+    cursor: pointer;
+ }
+
+ #lost {
+    margin-left: 70%;
+ }
+ 
+ #creating {
+    margin-left: 15px;
+    font-size: 17px;
+ }
+ 
+ #mail > p {
+    margin-left: 15px;
+    font-size: 18px;
+ }
+
+ #emailbox {
+    margin-left: 15px;
+    width: 90%;
+    height: 40px;
+ }
+
+ #link {
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 17px;
+    
+ }
+
+ #your {
+    margin-left: 15px;
+    margin-top: 15px;
+ }
+
+ #yourmain{
+    margin-top: 65px;
+ }
+ #reg {
+    margin-left: 35px;
+    margin-top: 40px;
+    
+ }
+ #rbtn {
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+    background-color: orange;
+ }
+
+ #box1{
+    background-color: #FAFAFA;
+ }

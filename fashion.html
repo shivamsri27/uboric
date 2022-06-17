@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5f859fecb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>fashion</title>
+</head>
+<body>
+
+    
+    <div id="topbar"><h4>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h4></div>
+    <div id="header">
+        <div>
+            <input type="text" id="search" placeholder="Search here...">
+            <button id="searchbar" onclick="submited()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="" id="logo">
+        </div>
+        <div id="cardprofile">
+            <div>
+                <button id="myBtn"><i class="fa-solid fa-address-card"></i></button>
+                
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+     
+  <h2 id = "login">Sign in</h2>
+  
+  <!-- <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div> -->
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit" id="loginid">Login</button>
+     
+    </div>
+  
+    <div class="container" >
+      
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+    </div>
+  
+  </div>
+                
+            </div>
+            <div><i class="fa-solid fa-cart-plus"></i></div>
+        </div>
+       
+    </div>
+    <div id="menu">
+        <div>
+            <a href="index.html"><p>Home</p></a>
+        </div>
+        <div>
+            <div class="dropdown">
+                <span>Categories</span>
+                <div class="dropdown-content">
+                <a href="fashion.html" target="_blank"><p>Fashion</p></a>
+                <a href="kitchen.html" target="_blank"><p>Kitchen</p></a>
+                <p>Accessories</p>
+                <p>Health and Personal-Care</p>
+                </div>
+              </div>
+        </div>
+        <div>
+            <a href="customer.html"><p>Customer/Guest login</p></a>
+        </div>
+        <div>
+            <a href="merchant.html"><p>Merchant/Bulk Order</p></a> 
+        </div>
+        <div>
+            <a href="become.html"><p>Become A Seller</p></a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="fashioncont"></div>
+    
+
+
+
+
+
+    <div id="customersay">
+        <div>
+            <h1>What Our Customer Says</h1>
+        </div>
+        <div id="Review">
+            <div>
+                <h3>Best Quality Product</h3>
+                <p>Shivam</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+            <div>
+                <h3>Best range</h3>
+                <p>Daval Patel</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+            <div>
+                <h3>Best Quality</h3>
+                <p>Ashish Vaghas</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+        </div> 
+        <button id="buttonadd">Add Your Review</button>  
+     </div>
+     <div id="footer">
+          <div id="playstore">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" alt="">
+          </div>
+          <div id="Aboutus">
+            <div>
+                <p>About Us</p>
+            </div>
+            <div>
+                <p>Contact</p>
+            </div>
+            <div>
+                <p>Shipping & Returns</p>
+            </div>
+            <div>
+                <p>My Account</p>
+            </div>
+            <div>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p>Become and Seller</p>
+            </div>
+            <div>
+                <p>Terms & Conditions</p>
+            </div>
+          </div>
+          <div id="year">
+            <p>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div id="socal">
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+          </div>
+     </div>
+</body>
+</html>
+<style>
+    #fashioncont {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap : 35px;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        margin-top: 40px;
+       
+    }
+    #fashioncont > div {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 380px;
+    }
+    #pic {
+        height: 200px;
+        width: 200px;
+    }
+    #addto {
+        background-color: orange;
+        color: black;
+       cursor: pointer;
+    }
+</style>
+<script>
+    fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=Foundation`)
+    .then(function(res){
+        res.json().then(function(res){
+            console.log(res)
+            append(res)
+        })
+    })
+    .catch(function(err){
+        console.log(error)
+    })
+
+    function append(res){
+        res.map(function(res){
+            console.log(res)
+            let box = document.getElementById("fashioncont")
+            let div = document.createElement("div")
+            let image = document.createElement("img")
+            image.src = res.image_link;
+            image.setAttribute("id","pic")
+            let name = document.createElement("h3")
+            name.innerText = res.name
+            let price = document.createElement("h4")
+            price.innerText = res.price;
+        
+            let btn = document.createElement("button")
+            btn.innerText="Add to Card"
+            btn.setAttribute("id","addto")
+            div.append(image,name,price,btn);
+            box.append(div)
+        })
+    }
+
+
+    
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

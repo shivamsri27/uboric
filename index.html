@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5f859fecb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>Uboric</title>
+</head>
+<body>
+   <div id="homepage">
+    <div id="topbar"><h4>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h4></div>
+    <div id="header">
+        <div>
+            <input type="text" id="search" placeholder="Search here...">
+            <button id="searchbar" onclick="submited()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="" id="logo">
+        </div>
+        <div id="cardprofile">
+            <div>
+                <button id="myBtn"><i class="fa-solid fa-address-card"></i></button>
+                
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+     
+  <h2 id = "login">Sign in</h2>
+  
+  <!-- <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div> -->
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required  id="usergive">
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id = "userpass">
+          
+      <button type="submit" id="loginid" onclick="submitmy()">Login</button>
+     
+    </div>
+  
+    <div class="container" >
+      
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+    </div>
+  
+  </div>
+                
+            </div>
+            <div id="cardread"><i class="fa-solid fa-cart-plus"></i></div>
+        </div>
+       
+    </div>
+    <div id="menu">
+        <div>
+            <a href="index.html"><p>Home</p></a>
+        </div>
+        <div>
+            <div class="dropdown">
+                <span>Categories</span>
+                <div class="dropdown-content">
+                <a href="fashion.html" target="_blank"><p>Fashion</p></a>
+                <a href="kitchen.html" target="_blank"><p>Kitchen</p></a>
+                <a href="accecories.html" target="_blank"><p>Accessories</p></a>
+                <a href="accecories.html" target="_blank"><p>Health and Personal-Care</p></a>
+                </div>
+              </div>
+        </div>
+        <div>
+            <a href="customer.html"><p>Customer/Guest login</p></a>
+        </div>
+        <div>
+            <a href="merchant.html"><p>Merchant/Bulk Order</p></a> 
+        </div>
+        <div>
+            <a href="become.html"><p>Become A Seller</p></a>
+        </div>
+    </div>
+
+    <div  id="banner">
+         <img src="https://i.pinimg.com/originals/39/5c/bd/395cbdc769cbbc96a8d123a5f1f16e80.jpg" alt="">
+    </div>
+
+    <div id="kitchenlogo">
+        <div id="kitchenimg">
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-pkx8tvxfmbbsdlrzrk3iwlbxruc7cn5sq339xkx9cg.png" alt="">
+        </div>
+        <div>
+            <h1>KITCHEN WARE</h1>
+        </div>
+        <div id="kitchenimg">
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-2-e1608267087979-pkx8tuzlfhai1ztcx1owc3kh6ggu4y22dyfsgaynio.png" alt="">
+        </div>
+    </div>
+
+    <div id="kitchengrid">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="banner24">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/Uboric-1.jpg" alt="">
+    </div>
+
+    <div id="bannerothercategories">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-pkx8tu1r8n97qduq2ja9rlt0l2lgx8yc1tsaz101ow.png" alt="">
+        </div>
+        <div>
+            <h1>OTHER CATEGORIES</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-2-e1608267154124-pkx8tt3x1t7xerw380vn741jzoq3pjulpp4thr1fv4.png" alt="">
+        </div>
+    </div>
+
+    <div id="twogrid">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner1-1-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner2-1.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="bannerearphone">
+        <img src="https://www.uboric.com/wp-content/uploads/2021/02/Headphone.jpg" alt="">
+    </div>
+
+    <div id="cloth_paint">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner3-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner4-1.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="gridall">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Socks.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Personal-Care.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Braclate.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Grocery.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Health-Care.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="spice">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-pkx8te2i0gnc90hxnudm37u6his8ae6wbmp1tbnqmo.png" alt="" >
+        </div>
+        <div>
+            <h1>SPICES</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-pkx8tf0c7aomkmgkics8npln2wnli3amnrcjalmcgg.png" alt="" >
+        </div>
+    </div>
+
+    <div id="spicesgrid">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-3.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-5.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-4.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="footwear">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-pkxdahmpc96i32hqyh9qfkc7owqxivqr4zuwukso7k.png" alt="">
+        </div>
+        <div>
+            <h1>FOOT WEAR</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-left-e1605175515419-pkxdaq391ri2zk5gl2xdk07d1dl8g5oc65qa62g4nk.png" alt="">
+        </div>
+    </div>
+         
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg" alt="">
+    </div>
+
+    
+    <div id="spicesgrid">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="TheUltimate">
+        <div id="header1">
+            <h1>The Ultimate Domestic Online Shopping Experience <br>Platform in India</h1>
+        </div>
+        <div id="article">
+            <p>Online shopping with Uboric is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep. Uboric offers you the chance to choose top branded products sitting in the comfort of your homes and just clicking on your requirements to get it delivered at your doorstep. Your search for the latest trending variety of unique products ends right here. A wide range of international products from global brands are available at your fingertips. We provide you with a world-class online shopping experience, along with superior service, to suit all your specific requirements. Our products are very reasonably priced and are not easily available elsewhere. Our high-end technology-based systems, combined with a human approach, ensure that you have an amazing and blissful online shopping experience with us. Our emphasis on customer delight drives every activity we undertake to provide you an ultimate, hassle-free and pleasant shopping experience. Our diverse categories of products comprise of fashion & jewellery, mobiles and tablets, home and furniture, electronics, health care and supplements, sports and fitness, beauty and perfumes. We offer almost every variety of product that your heart desires. Just Go Ahead and Explore the magical world of online shopping with Uboric! 24×7 Customer Care: For all your queries and concerns regarding your shopping orders.</p>
+        </div>
+        <div id="header2">
+            <h1>Benefits of shopping on Uboric :</h1>
+        </div>
+    </div>
+     <div id="user">
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>
+                User-Friendly
+            </h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>
+                User-Friendly
+            </h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>
+                User-Friendly
+            </h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>
+                Check Out Closely
+            </h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>Multiple Payment Options:</h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-check"></i></p>
+        </div>
+        <div>
+            <h3>Order History:</h3>
+        </div>
+     </div>
+
+     <div id="customersay">
+        <div>
+            <h1>What Our Customer Says</h1>
+        </div>
+        <div id="Review">
+            <div>
+                <h3>Best Quality Product</h3>
+                <p>Shivam</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+            <div>
+                <h3>Best range</h3>
+                <p>Daval Patel</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+            <div>
+                <h3>Best Quality</h3>
+                <p>Ashish Vaghas</p>
+                <p><i class="fa-solid fa-face-smile"></i> Customer</p>
+            </div>
+        </div> 
+        <button id="buttonadd">Add Your Review</button>  
+     </div>
+     <div id="footer">
+          <div id="playstore">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" alt="">
+          </div>
+          <div id="Aboutus">
+            <div>
+                <p>About Us</p>
+            </div>
+            <div>
+                <p>Contact</p>
+            </div>
+            <div>
+                <p>Shipping & Returns</p>
+            </div>
+            <div>
+                <p>My Account</p>
+            </div>
+            <div>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p>Become and Seller</p>
+            </div>
+            <div>
+                <p>Terms & Conditions</p>
+            </div>
+          </div>
+          <div id="year">
+            <p>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div id="socal">
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+          </div>
+     </div>
+   </div>
+</body>
+</html>
+<script src="index.js"></script>

@@ -1,0 +1,479 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+#loginid {
+    margin-top: 35px;
+    height: 35px;
+    width: 100%;
+    background-color: orange;
+}
+
+
+#myBtn {
+  /* background-color: orange; */
+  color: black;
+  padding: 10px 15px;
+  margin: -8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  font-size : 15px;
+  height: 15px;
+  width: 25px;
+  cursor: pointer;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+/* 
+button:hover {
+  opacity: 0.8;
+} */
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  /* background-color: #f44336; */
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 15%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#login {
+color : blue;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 200px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 350px;
+  margin-left: 55%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#topbar {
+    height: 20px;
+    width: 100%;
+    border: 1px solid blue;
+    background-color: #1E516C;
+    color: white;
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 18px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#menu > div > a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    
+}
+ a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#topbar > h4 {
+    margin-top: 5px;
+  
+}
+
+#logo {
+    height: 200px;
+    width: 200px;
+    margin-top: -70px;
+   
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+  
+}
+
+#cardprofile{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+    cursor: pointer ;
+    
+}
+
+#banner {
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#banner > img{
+    height: 100%;
+    width: 100%;
+}
+
+#kitchenlogo{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #1E516C;;
+}
+#kitchenimg{
+    margin-top: 15px;
+}
+#searchbar {
+    background-color: black;
+    color: white;
+    width: 45px;
+    height: 28px;
+    cursor: pointer;
+}
+#kitchengrid{
+    margin: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    cursor: pointer;
+}
+
+#kitchengrid > div > img {
+    height: 350px;
+    width: 420px;
+}
+
+#banner24{
+    width: 100%;
+    margin-top: 40px;
+    background-color: #82D0F6;
+}
+
+#bannerothercategories{
+    width: 35%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #1E516C;
+}
+
+#bannerothercategories > div > img {
+    margin-top: 30px;
+}
+
+#twogrid{
+    display: flex;
+    gap: 25px;
+   
+}
+#twogrid > div > img {
+    height: 370px;
+    width: 700px;
+}
+
+#bannerearphone{
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+
+#cloth_paint{
+    margin-top: 45px;
+    height: 400px;
+    width: 100%;
+    border: 1px solid blue;
+    display: flex;
+    cursor: pointer;
+}
+
+#gridall {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    margin-top: 35px;
+    cursor: pointer;
+    background-color: #C0CFD5;
+}
+
+#gridall > div{
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #C0CFD5;
+}
+
+#gridall > div > img{
+   height: 350px;
+   width: auto;
+   border-radius: 10px;
+   margin-left: 10px;
+}
+
+#spice{
+    display: flex;
+    gap: 45px;
+    width: 28%;
+    margin: auto;
+    color: #1E516C;
+    margin-top: 35px;
+}
+
+#spicesgrid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    /* border:1px solid black ; */
+    background-color: #C0CFD5;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#spicesgrid > div {
+    /* border: 1px solid red; */
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#spicesgrid > div > img {
+    height: 350px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#footwear {
+    margin: auto;
+    border-top: 40px;
+    display: flex;
+    gap: 45px;
+    width: 34%;
+    /* border: 1px solid black; */
+   margin-top: 35px;
+}
+
+#footwear > div > img {
+    margin-top: 20px;
+}
+
+#TheUltimate{
+    height: 400px;
+    width: 85%;
+    margin: auto;
+    margin-top: 45px;
+    background-color: #FAF8F8;
+}
+
+#header1 {
+    margin-top: 30px;
+    text-align: center;
+    color: #1E516C;
+    
+}
+#article {
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+
+#header2 {
+    margin-top: 5px;
+    text-align: center;
+    color: #1E516C;
+}
+
+#user{
+    margin-top: 165px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 85%;
+    /* border: 1px solid black; */
+  
+    margin: auto;
+}
+
+#user>div>p>i{
+    margin-top: 5px;
+}
+
+#customersay{
+    height: 480px;
+    width: 100%;
+    background-color: #82761F;
+}
+/* #customersay> div{
+   height: 0px;
+   margin: auto;
+   width: 40%;
+   border: 0.1px solid brown; */
+/* } */
+#customersay> div > h1 {
+    margin-top: 55px;
+    color: white;
+    text-align: center;
+} 
+
+#Review{
+    margin-top: 95px;
+    margin-left: 45px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    color: white;
+
+}
+
+#buttonadd{
+    margin-left: 600px;
+    margin-top: 145px;
+    height: 45px;
+    width: 150px;
+    color: black;
+    background-color: yellow;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+#footer{
+    height: 250px;
+    width: 100%;
+   background-color: black;
+}
+
+#playstore {
+    margin-top: 0px;
+    margin-left: 570px;
+}
+#playstore > img{
+    height: 50px;
+    margin-top: 30px;
+}
+
+#Aboutus{
+    margin-top: 45px;
+    display: flex;
+    gap: 25px;
+    margin: auto;
+    width: 65%;
+    color: white;
+}
+
+#year{
+    margin-top: 45px;
+    width: 26%;
+    margin: auto;
+    color: white;
+}
+#socalmedia{
+    display: flex;
+    gap: 20px;
+    margin-top: 45px;
+    width: 5%;
+    margin: auto;
+    color: white;
+}
+
+#cardread {
+    cursor: pointer;
+}
